@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane stylesheets="@application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.creatorController">
+   <center>
+      <AnchorPane prefHeight="396.0" prefWidth="527.0" style="-fx-background-color: #1d1d1d;" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField fx:id="passr" layoutX="163.0" layoutY="162.0" prefHeight="25.0" prefWidth="201.0" />
+            <TextField fx:id="unamer" layoutX="163.0" layoutY="117.0" prefHeight="25.0" prefWidth="202.0" />
+            <Button fx:id="loginbtn" layoutX="211.0" layoutY="320.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="103.0" text="Register">
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font></Button>
+            <Text fill="#f2e2e2" layoutX="124.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Creator Registration" wrappingWidth="280.3994140625">
+               <font>
+                  <Font name="Segoe UI Semibold" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="#f2e2e2" layoutX="54.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <font>
+                  <Font name="Segoe UI Semibold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#f2e2e2" layoutX="57.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="Segoe UI Semibold" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#f2e2e2" layoutX="92.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font name="Segoe UI Semibold" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="email" layoutX="164.0" layoutY="207.0" prefHeight="25.0" prefWidth="201.0" />
+            <Hyperlink fx:id="loginlink" layoutX="28.0" layoutY="338.0" onAction="#goBack" text="Back">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Hyperlink>
+            <DatePicker fx:id="dob" layoutX="163.0" layoutY="259.0" prefHeight="35.0" prefWidth="199.0" />
+            <Text fill="#f2e2e2" layoutX="42.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

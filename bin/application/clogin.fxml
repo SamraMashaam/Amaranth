@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane stylesheets="@application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.creatorController">
+   <center>
+      <AnchorPane prefHeight="396.0" prefWidth="527.0" style="-fx-background-color: #1d1d1d;" BorderPane.alignment="CENTER">
+         <children>
+            <PasswordField fx:id="pass" layoutX="163.0" layoutY="209.0" prefHeight="25.0" prefWidth="201.0" />
+            <TextField fx:id="uname" layoutX="162.0" layoutY="145.0" prefHeight="25.0" prefWidth="202.0" />
+            <Button fx:id="loginbtn" layoutX="212.0" layoutY="281.0" mnemonicParsing="false" onAction="#pressButton" prefHeight="36.0" prefWidth="103.0" text="Log in" />
+            <Text fill="#f2e2e2" layoutX="113.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Content Creator Login" wrappingWidth="300.99945068359375">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fill="#f2e2e2" layoutX="61.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#f2e2e2" layoutX="66.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Hyperlink fx:id="signuplink" layoutX="233.0" layoutY="337.0" onAction="#openRegister" text="Sign up" textFill="#f2e2e2">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Hyperlink>
+            <Button layoutX="372.0" layoutY="343.0" mnemonicParsing="false" onAction="#goBackmain" text="Back to main" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
