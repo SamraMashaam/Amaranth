@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane stylesheets="@application.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mainController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1d1d1d;" stylesheets="@application.css">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/Amaranth.png" />
+               </image>
+            </ImageView>
+            <Text fill="#f2e2e2" layoutX="226.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amaranth">
+               <font>
+                  <Font name="Segoe UI Semibold" size="34.0" />
+               </font>
+            </Text>
+            <Hyperlink layoutX="58.0" layoutY="275.0" onAction="#viewer" text="Viewer Login" textFill="#f8f8f8">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="421.0" layoutY="275.0" onAction="#creator" text="Creator Login" textFill="#ebe3e7">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink layoutX="227.0" layoutY="329.0" onAction="#mod" text="Moderator Login" textFill="#ebe3e7">
+               <font>
+                  <Font name="Segoe UI Semibold" size="18.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
